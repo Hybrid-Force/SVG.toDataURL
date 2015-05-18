@@ -38,7 +38,7 @@
 
 	¹ http://svgopen.org/2010/papers/62-From_SVG_to_Canvas_and_Back/#svg_to_canvas
 */
-
+(function(){
 SVGElement.prototype.toDataURL = function(type, options) {
 	var _svg = this;
 	
@@ -217,3 +217,4 @@ SVGElement.prototype.toDataURL = function(type, options) {
 			debug("Sorry! Exporting as '" + type + "' is not supported!")
 	}
 }
+})();
